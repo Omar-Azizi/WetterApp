@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded',function() {
             const temperature = data.main.temp;
             const weather = data.weather[0].description;
 
-            document.getElementById('temp').innerText = temperature;
+            document.getElementById('temp').innerText = temperature + '°C'
             document.getElementById('prognose').innerText = weather;
         })
         .catch(error => {
